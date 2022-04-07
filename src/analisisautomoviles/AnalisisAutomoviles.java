@@ -36,17 +36,15 @@ public class AnalisisAutomoviles {
         car02.prender = false;
         car02.kilometraje = 15000;
         car02.luz_delantera = false;
-        car02.luz_freno = false;
-        car02.direccionales = 9;
+        car02.luz_freno = true;
+        car02.direccionales = 2;
         car02.movimiento = false;
         System.out.println("El carro esta " + (car02.prender ? "encendido" : "apagado"));
         System.out.println("El kilometraje es de " + car02.kilometraje);
         System.out.println("La luz delantera esta " + (car02.luz_delantera ? "encendida" : "apagada"));
         System.out.println("La luz de freno esta " + (car02.luz_freno ? "encendida" : "apagada"));
         System.out.println("Las direccionales estan " + (car02.direccionales == 1 ? "del lado izquierdo"
-                : car01.direccionales == 2 ? "del lado derecho" : "apagadas"));
+                : car02.direccionales == 2 ? "del lado derecho" : "apagadas"));
         System.out.println("El carro esta " + (car02.movimiento ? "desplazamiento" : "inmovil"));
     }
 }
-
-
