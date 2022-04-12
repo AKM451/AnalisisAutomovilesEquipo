@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Angel
+ * @author Kevin
  */
 public class AnalisisAutomoviles {
     /**
@@ -17,32 +17,89 @@ public class AnalisisAutomoviles {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Coche c1 = new Coche();
+        Coche Fordfocus = new Coche();{
         String acelera;
-        /*
+        
         double velocidad = Double.parseDouble(JOptionPane.showInputDialog("Velocidad:"));
         double tiempo = Double.parseDouble(JOptionPane.showInputDialog("Tiempo:"));
-        //c1.prende = true;
-        acelera = c1.acelerar(velocidad, tiempo);
+        Fordfocus.prende = true;
+        acelera = Fordfocus.acelerar(velocidad, tiempo);
 
         if(!acelera.equals(""))
             JOptionPane.showMessageDialog(null, acelera, "Error", 
                     JOptionPane.ERROR_MESSAGE);
-*/
+
 /*
         c1.setLuz(true, true);
         c1.setLuz(false, true);
 */
         //c1.setLuz_delantera(true);
         //c1.setLuz_trasera(false);
-        c1.enciendeLuzDelantera();
-        c1.enciendeLuzTrasera();
+        Fordfocus.enciendeLuzDelantera();
+        Fordfocus.enciendeLuzTrasera();
 
-        JOptionPane.showMessageDialog(null, c1, "Info", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, Fordfocus, "Ford Focus", JOptionPane.INFORMATION_MESSAGE);
+       
+        /*
         c1.cambiaEstadoLuzDelantera();
         JOptionPane.showMessageDialog(null, c1, "Info", JOptionPane.INFORMATION_MESSAGE);
         c1.cambiaEstadoLuzDelantera();
         JOptionPane.showMessageDialog(null, c1, "Info", JOptionPane.INFORMATION_MESSAGE);
+        */
+    }{
+        Coche Toyotacorolla = new Coche();
+        String acelera;
+
+        double velocidad = Double.parseDouble(JOptionPane.showInputDialog("Velocidad:"));
+        double tiempo = Double.parseDouble(JOptionPane.showInputDialog("Tiempo:"));
+        Toyotacorolla.prende = false;
+        acelera = Toyotacorolla.acelerar(velocidad, tiempo);
+
+        if(!acelera.equals(""))
+            JOptionPane.showMessageDialog(null, acelera, "Error", 
+                    JOptionPane.ERROR_MESSAGE);
+
+/*
+        c1.setLuz(true, true);
+        c1.setLuz(false, true);
+*/
+        //c1.setLuz_delantera(true);
+        //c1.setLuz_trasera(false);
+        Toyotacorolla.enciendeLuzDelantera();
+        Toyotacorolla.apagaLuzTrasera();
+
+        JOptionPane.showMessageDialog(null, Toyotacorolla, "Toyota Corolla", JOptionPane.INFORMATION_MESSAGE);
     }
+        
+        Coche Platina = new Coche();
+        String acelera;
+
+        double velocidad = Double.parseDouble(JOptionPane.showInputDialog("Velocidad:"));
+        double tiempo = Double.parseDouble(JOptionPane.showInputDialog("Tiempo:"));
+        Platina.prende = true;
+        acelera = Platina.acelerar(velocidad, tiempo);
+
+        if(!acelera.equals(""))
+            JOptionPane.showMessageDialog(null, acelera, "Error", 
+                    JOptionPane.ERROR_MESSAGE);
+
+/*
+        c1.setLuz(true, true);
+        c1.setLuz(false, true);
+*/
+        //c1.setLuz_delantera(true);
+        //c1.setLuz_trasera(false);
+        Platina.enciendeLuzDelantera();
+        Platina.apagaLuzTrasera();
+
+        JOptionPane.showMessageDialog(null, Platina, "Platina", JOptionPane.INFORMATION_MESSAGE);
+    
+        
+       
+        
+    
+    
+    }   
+    
     
 }
